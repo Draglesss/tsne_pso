@@ -169,6 +169,9 @@ If you use this implementation in your research, please cite both the original p
 - **Original Paper Authors**:
   - Mebarka Allaoui (Bishop's University, Canada)
   - Samir Brahim Belhaouari (Hamad Bin Khalifa University, Qatar)
-  - Rachid Hedjam (Sultan Qaboos University)
+  - Rachid Hedjam (Bishop's University, Canada)
   - Khadra Bouanane (Kasdi Merbah University, Algeria)
   - Mohammed Lamine Kherfi (Sultan Qaboos University & University of Quebec)
+
+- **Contributors and maintainers**:
+  - Otmane Fatteh (Bishop's University, Canada)
