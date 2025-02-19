@@ -1,0 +1,42 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "Cython>=3.0.0",
+    "numpy>=1.20.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tsne-pso"
+version = "1.0.0"
+description = "High-performance t-SNE implementation with PSO optimization"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Otmane Fatteh", email = "fattehotmane@hotmail.com"},
+]
+dependencies = [
+    "numpy>=1.20.0",
+    "scipy>=1.6.0",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=6.0",
+    "pytest-cov>=2.0",
+]
+dev = [
+    "black>=22.0",
+    "isort>=5.0",
+    "flake8>=4.0",
+]
+
+[tool.setuptools]
+packages = ["tsne_pso"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v"
