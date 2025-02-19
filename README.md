@@ -155,10 +155,10 @@ This implementation is based on the research paper:
 If you use this implementation in your research, please cite both the original paper and this implementation:
 
 ```bibtex
-@software{tsne_pso2024,
+@software{tsne_pso2025,
     author = {Otmane Fatteh},
     title = {TSNE-PSO: High-Performance t-SNE with Particle Swarm Optimization},
-    year = {2024},
+    year = {2025},
     publisher = {GitHub},
     url = {https://github.com/Draglesss/tsne_pso}
 }
