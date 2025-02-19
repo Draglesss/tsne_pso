@@ -4,7 +4,7 @@
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/downloads/)
 [![Build Status](https://github.com/Draglesss/tsne_pso/workflows/CI/badge.svg)](https://github.com/Draglesss/tsne_pso/actions)
 
-A blazingly fast implementation of t-SNE (t-Distributed Stochastic Neighbor Embedding) using Particle Swarm Optimization (PSO) for dimensionality reduction. This implementation combines the power of C/C++ with Python bindings for maximum performance and usability.
+A blazingly fast implementation of t-SNE (t-Distributed Stochastic Neighbor Embedding) using Particle Swarm Optimization (PSO) for dimensionality reduction, based on the research paper by Allaoui et al. This implementation combines the power of C/C++ with Python bindings for maximum performance and usability.
 
 ## 🚀 Features
 
@@ -139,20 +139,36 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📚 Citation
 
-If you use this implementation in your research, please cite:
+This implementation is based on the research paper:
+
+```bibtex
+@article{allaoui2025tsne,
+    title={t-SNE-PSO: Optimizing t-SNE using particle swarm optimization},
+    author={Allaoui, Mebarka and Belhaouari, Samir Brahim and Hedjam, Rachid and Bouanane, Khadra and Kherfi, Mohammed Lamine},
+    journal={Expert Systems with Applications},
+    year={2025},
+    doi={10.1016/j.eswa.2025.126398},
+    publisher={Elsevier}
+}
+```
+
+If you use this implementation in your research, please cite both the original paper and this implementation:
 
 ```bibtex
 @software{tsne_pso2024,
-  author = {Otmane Fatteh},
-  title = {TSNE-PSO: High-Performance t-SNE with Particle Swarm Optimization},
-  year = {2024},
-  publisher = {GitHub},
-  url = {https://github.com/Draglesss/tsne_pso}
+    author = {Otmane Fatteh},
+    title = {TSNE-PSO: High-Performance t-SNE with Particle Swarm Optimization},
+    year = {2024},
+    publisher = {GitHub},
+    url = {https://github.com/Draglesss/tsne_pso}
 }
 ```
 
 ## 🙏 Acknowledgments
 
-- Original t-SNE paper authors
-- Contributors and maintainers
-- Open source community 
+- **Original Paper Authors**:
+  - Mebarka Allaoui (Bishop's University, Canada)
+  - Samir Brahim Belhaouari (Hamad Bin Khalifa University, Qatar)
+  - Rachid Hedjam (Sultan Qaboos University)
+  - Khadra Bouanane (Kasdi Merbah University, Algeria)
+  - Mohammed Lamine Kherfi (Sultan Qaboos University & University of Quebec)
