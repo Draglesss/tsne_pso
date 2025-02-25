@@ -159,7 +159,7 @@ If you use this implementation in your research, please cite both the original p
     author = {Otmane Fatteh},
     title = {TSNE-PSO: High-Performance t-SNE with Particle Swarm Optimization},
     year = {2025},
-    publisher = {GitHub},
+    publisher = {Elsevier},
     url = {https://github.com/Draglesss/tsne_pso}
 }
 ```
