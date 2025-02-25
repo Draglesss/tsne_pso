@@ -6,6 +6,9 @@
 
 A blazingly fast implementation of t-SNE (t-Distributed Stochastic Neighbor Embedding) using Particle Swarm Optimization (PSO) for dimensionality reduction, based on the research paper by Allaoui et al. This implementation combines the power of C/C++ with Python bindings for maximum performance and usability.
 
+- Check out [t-SNE-PSO visualizer here](https://m-allaoui.github.io/t-SNE-PSO/)
+- Repo: [https://github.com/M-Allaoui/t-SNE-PSO](https://github.com/M-Allaoui/t-SNE-PSO)
+
 ## 🚀 Features
 
 - **High Performance**: Core implementation in C with SIMD optimizations
