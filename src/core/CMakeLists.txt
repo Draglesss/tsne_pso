@@ -1,29 +1,29 @@
-# Create the core library
+# Core C library (shared) hosting the implementation.
 add_library(tsne_pso_core SHARED
     tsne_pso.c
 )
 
-# Set include directories
+# Public headers live in `include/`.
 target_include_directories(tsne_pso_core
     PUBLIC
     ${CMAKE_SOURCE_DIR}/include
 )
 
-# Set compile options
+# Build flags: optimize and enable OpenMP where supported.
 if(MSVC)
     target_compile_options(tsne_pso_core PRIVATE /O2 /openmp)
 else()
     target_compile_options(tsne_pso_core PRIVATE -O3 -march=native -fopenmp)
 endif()
 
-# Link against OpenMP
+# OpenMP + libm for math.
 target_link_libraries(tsne_pso_core
     PUBLIC
     OpenMP::OpenMP_C
     m
 )
 
-# Install library
+# Install the shared library (and the archive when relevant).
 install(TARGETS tsne_pso_core
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}

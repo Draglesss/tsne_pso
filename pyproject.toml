@@ -10,8 +10,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "tsne-pso"
 version = "1.0.0"
-description = "High-performance t-SNE implementation with PSO optimization"
-readme = "README.md"
+description = "t-SNE with PSO optimization (C core with Python bindings)"
 requires-python = ">=3.8"
 license = {file = "LICENSE"}
 authors = [

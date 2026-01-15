@@ -1,6 +1,4 @@
-"""
-High-performance t-SNE implementation with PSO optimization.
-"""
+"""TSNE-PSO Python bindings."""
 
 from .tsne_pso import TSNE_PSO
 

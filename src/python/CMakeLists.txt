@@ -1,10 +1,10 @@
-# Find Cython
+# Cython is required at build time to generate the extension C source.
 find_program(CYTHON_EXECUTABLE NAMES cython cython.bat cython3)
 if(NOT CYTHON_EXECUTABLE)
     message(FATAL_ERROR "Cython not found. Please install Cython first.")
 endif()
 
-# Generate C source from Cython
+# Generate C source from the `.pyx` definition.
 add_custom_command(
     OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/tsne_pso.c
     COMMAND ${CYTHON_EXECUTABLE} 
@@ -14,7 +14,7 @@ add_custom_command(
     COMMENT "Cythonizing ${CMAKE_CURRENT_SOURCE_DIR}/tsne_pso.pyx"
 )
 
-# Create Python extension module
+# Build the Python extension module.
 find_package(Python3 COMPONENTS Interpreter Development NumPy REQUIRED)
 
 add_library(tsne_pso_python MODULE
@@ -40,7 +40,7 @@ set_target_properties(tsne_pso_python PROPERTIES
     SUFFIX ".so"
 )
 
-# Installation
+# Install into the active Python's site-arch under `tsne_pso/`.
 install(TARGETS tsne_pso_python
     LIBRARY DESTINATION ${Python3_SITEARCH}/tsne_pso
 )
